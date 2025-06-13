@@ -1,0 +1,811 @@
+module or16x16x16(
+    input [15:0]a, 
+    input [15:0]b, 
+    input [15:0]c,
+	 input [15:0]d,
+	 input [15:0]e,
+	 input [15:0]f,
+	 input [15:0]g,
+    output [15:0]w
+);
+
+    wire [15:0] temp,p,s,u,v;
+
+	 or or1(temp[0], a[0], b[0]);
+	 or or2(temp[1], a[1], b[1]);
+	 or or3(temp[2], a[2], b[2]);
+	 or or4(temp[3], a[3], b[3]);
+	 or or5(temp[4], a[4], b[4]);
+	 or or6(temp[5], a[5], b[5]);
+	 or or7(temp[6], a[6], b[6]);
+	 or or8(temp[7], a[7], b[7]);
+	 or or9(temp[8], a[8], b[8]);
+	 or or10(temp[9], a[9], b[9]);
+	 or or11(temp[10], a[10], b[10]);
+	 or or12(temp[11], a[11], b[11]);
+	 or or13(temp[12], a[12], b[12]);
+	 or or14(temp[13], a[13], b[13]);
+	 or or15(temp[14], a[14], b[14]);
+	 or or16(temp[15], a[15], b[15]);
+  
+    or or17(p[0], temp[0], c[0]);
+	 or or18(p[1], temp[1], c[1]);
+	 or or19(p[2], temp[2], c[2]);
+	 or or20(p[3], temp[3], c[3]);
+	 or or21(p[4], temp[4], c[4]);
+	 or or22(p[5], temp[5], c[5]);
+	 or or23(p[6], temp[6], c[6]);
+	 or or24(p[7], temp[7], c[7]);
+	 or or25(p[8], temp[8], c[8]);
+	 or or26(p[9], temp[9], c[9]);
+	 or or27(p[10], temp[10], c[10]);
+	 or or28(p[11], temp[11], c[11]);
+	 or or29(p[12], temp[12], c[12]);
+	 or or30(p[13], temp[13], c[13]);
+	 or or31(p[14], temp[14], c[14]);
+	 or or32(p[15], temp[15], c[15]);
+	 
+	 or or33(s[0], p[0], d[0]);
+	 or or34(s[1], p[1], d[1]);
+	 or or35(s[2], p[2], d[2]);
+	 or or36(s[3], p[3], d[3]);
+	 or or37(s[4], p[4], d[4]);
+	 or or38(s[5], p[5], d[5]);
+	 or or39(s[6], p[6], d[6]);
+	 or or40(s[7], p[7], d[7]);
+	 or or41(s[8], p[8], d[8]);
+	 or or42(s[9], p[9], d[9]);
+	 or or43(s[10], p[10], d[10]);
+	 or or44(s[11], p[11], d[11]);
+	 or or45(s[12], p[12], d[12]);
+	 or or46(s[13], p[13], d[13]);
+	 or or47(s[14], p[14], d[14]);
+	 or or48(s[15], p[15], d[15]);
+	 
+	 or or49(u[0],s[0], e[0]);
+	 or or50(u[1],s[1], e[1]);
+	 or or51(u[2],s[2], e[2]);
+	 or or52(u[3],s[3], e[3]);
+	 or or53(u[4],s[4], e[4]);
+	 or or54(u[5],s[5], e[5]);
+	 or or55(u[6],s[6], e[6]);
+	 or or56(u[7],s[7], e[7]);
+	 or or57(u[8],s[8], e[8]);
+	 or or58(u[9],s[9], e[9]);
+	 or or59(u[10],s[10],e[10]);
+	 or or60(u[11],s[11],e[11]);
+	 or or61(u[12],s[12],e[12]);
+	 or or62(u[13],s[13],e[13]);
+	 or or63(u[14],s[14],e[14]);
+	 or or64(u[15],s[15],e[15]);
+	 
+	 or or65(v[0],u[0], f[0]);
+	 or or66(v[1],u[1], f[1]);
+	 or or67(v[2],u[2], f[2]);
+	 or or68(v[3],u[3], f[3]);
+	 or or69(v[4],u[4], f[4]);
+	 or or70(v[5],u[5], f[5]);
+	 or or71(v[6],u[6], f[6]);
+	 or or72(v[7],u[7], f[7]);
+	 or or73(v[8],u[8], f[8]);
+	 or or74(v[9],u[9], f[9]);
+	 or or75(v[10],u[10],f[10]);
+	 or or76(v[11],u[11],f[11]);
+	 or or77(v[12],u[12],f[12]);
+	 or or78(v[13],u[13],f[13]);
+	 or or79(v[14],u[14],f[14]);
+	 or or80(v[15],u[15],f[15]);
+	 
+	 or or81(w[0],v[0], g[0]);
+	 or or82(w[1],v[1], g[1]);
+	 or or83(w[2],v[2], g[2]);
+	 or or84(w[3],v[3], g[3]);
+	 or or85(w[4],v[4], g[4]);
+	 or or86(w[5],v[5], g[5]);
+	 or or87(w[6],v[6], g[6]);
+	 or or88(w[7],v[7], g[7]);
+	 or or89(w[8],v[8], g[8]);
+	 or or90(w[9],v[9], g[9]);
+	 or or91(w[10],v[10],g[10]);
+	 or or92(w[11],v[11],g[11]);
+	 or or93(w[12],v[12],g[12]);
+	 or or94(w[13],v[13],g[13]);
+	 or or95(w[14],v[14],g[14]);
+	 or or96(w[15],v[15],g[15]);
+	 
+       
+endmodule
+
+module and16x1(
+    input [15:0]a,
+    input b,
+    output [15:0]p
+);
+
+    and and1(p[0], a[0], b);
+	 and and2(p[1], a[1], b);
+	 and and3(p[2], a[2], b);
+	 and and4(p[3], a[3], b);
+	 and and5(p[4], a[4], b);
+	 and and6(p[5], a[5], b);
+	 and and7(p[6], a[6], b);
+	 and and8(p[7], a[7], b);
+	 and and9(p[8], a[8], b);
+	 and and10(p[9], a[9], b);
+	 and and11(p[10], a[10], b);
+	 and and12(p[11], a[11], b);
+	 and and13(p[12], a[12], b);
+	 and and14(p[13], a[13], b);
+	 and and15(p[14], a[14], b);
+	 and and16(p[15], a[15], b);
+	 
+endmodule
+
+module Add2x2(
+    input [7:0]a00, a01, a10, a11,
+    input [7:0]b00, b01, b10, b11,
+    output [15:0]y00, y01, y10, y11
+);
+
+    wire [15:0] a00b00, a01b01, a10b10, a11b11;
+
+    RippleCarryAdder r1(a00, b00, y00); // a00 + b00
+    RippleCarryAdder r2(a01, b01, y01); // a01 + b01
+    RippleCarryAdder r3(a10, b10, y10); // a10 + b10
+    RippleCarryAdder r4(a11, b11, y11); // a11 + b11
+
+endmodule
+
+
+module Sub2x2(
+    input [7:0]a00, a01, a10, a11,
+    input [7:0]b00, b01, b10, b11,
+    output [15:0]y00, y01, y10, y11
+);
+
+    wire [7:0] neg_b00, neg_b01, neg_b10, neg_b11;
+	 wire [7:0] c00, c01, c10, c11;
+	 wire [7:0] s00, s01, s10, s11;
+	 wire [7:0] carry00, carry01, carry10,carry11;
+
+    not_gate not1(b00,neg_b00);
+    not_gate not2(b01,neg_b01);
+    not_gate not3(b10,neg_b10);
+    not_gate not4(b11,neg_b11);
+	 
+	 halfadder h1(neg_b00[0],1'b1,s00[0],c00[0]);
+	 halfadder h2(neg_b00[1],c00[0],s00[1],c00[1]);
+	 halfadder h3(neg_b00[2],c00[1],s00[2],c00[2]);
+	 halfadder h4(neg_b00[3],c00[2],s00[3],c00[3]);
+	 halfadder h5(neg_b00[4],c00[3],s00[4],c00[4]);
+	 halfadder h6(neg_b00[5],c00[4],s00[5],c00[5]);
+	 halfadder h7(neg_b00[6],c00[5],s00[6],c00[6]);
+	 halfadder h8(neg_b00[7],c00[6],s00[7],c00[7]);
+	 
+	 halfadder h9(neg_b01[0],1'b1,s01[0],c01[0]);
+	 halfadder h10(neg_b01[1],c01[0],s01[1],c01[1]);
+	 halfadder h11(neg_b01[2],c01[1],s01[2],c01[2]);
+	 halfadder h12(neg_b01[3],c01[2],s01[3],c01[3]);
+	 halfadder h13(neg_b01[4],c01[3],s01[4],c01[4]);
+	 halfadder h14(neg_b01[5],c01[4],s01[5],c01[5]);
+	 halfadder h15(neg_b01[6],c01[5],s01[6],c01[6]);
+	 halfadder h16(neg_b01[7],c01[6],s01[7],c01[7]);
+	 
+	 halfadder h17(neg_b10[0],1'b1,s10[0],c10[0]);
+	 halfadder h18(neg_b10[1],c10[0],s10[1],c10[1]);
+	 halfadder h19(neg_b10[2],c10[1],s10[2],c10[2]);
+	 halfadder h20(neg_b10[3],c10[2],s10[3],c10[3]);
+	 halfadder h21(neg_b10[4],c10[3],s10[4],c10[4]);
+	 halfadder h22(neg_b10[5],c10[4],s10[5],c10[5]);
+	 halfadder h23(neg_b10[6],c10[5],s10[6],c10[6]);
+	 halfadder h24(neg_b10[7],c10[6],s10[7],c10[7]);
+	 
+	 halfadder h25(neg_b11[0],1'b1,s11[0],c11[0]);
+	 halfadder h26(neg_b11[1],c11[0],s11[1],c11[1]);
+	 halfadder h27(neg_b11[2],c11[1],s11[2],c11[2]);
+	 halfadder h28(neg_b11[3],c11[2],s11[3],c11[3]);
+	 halfadder h29(neg_b11[4],c11[3],s11[4],c11[4]);
+	 halfadder h30(neg_b11[5],c11[4],s11[5],c11[5]);
+	 halfadder h31(neg_b11[6],c11[5],s11[6],c11[6]);
+	 halfadder h32(neg_b11[7],c11[6],s11[7],c11[7]);
+	 
+	 fulladder fa0(a00[0], s00[0], 1'b0, y00[0], carry00[0]);
+    fulladder fa1(a00[1], s00[1], carry00[0], y00[1], carry00[1]);
+    fulladder fa2(a00[2], s00[2], carry00[1], y00[2], carry00[2]);
+    fulladder fa3(a00[3], s00[3], carry00[2], y00[3], carry00[3]);
+    fulladder fa4(a00[4], s00[4], carry00[3], y00[4], carry00[4]);
+    fulladder fa5(a00[5], s00[5], carry00[4], y00[5], carry00[5]);
+    fulladder fa6(a00[6], s00[6], carry00[5], y00[6], carry00[6]);
+    fulladder fa7(a00[7], s00[7], carry00[6], y00[7], carry00[7]);
+	 
+	 fulladder fa8(a01[0], s01[0], 1'b0, y01[0], carry01[0]);
+    fulladder fa9(a01[1], s01[1], carry01[0], y01[1], carry01[1]);
+    fulladder fa10(a01[2], s01[2], carry01[1], y01[2], carry01[2]);
+    fulladder fa11(a01[3], s01[3], carry01[2], y01[3], carry01[3]);
+    fulladder fa12(a01[4], s01[4], carry01[3], y01[4], carry01[4]);
+    fulladder fa13(a01[5], s01[5], carry01[4], y01[5], carry01[5]);
+    fulladder fa14(a01[6], s01[6], carry01[5], y01[6], carry01[6]);
+    fulladder fa15(a01[7], s01[7], carry01[6], y01[7], carry01[7]);
+	 
+	 fulladder fa16(a10[0], s10[0], 1'b0, y10[0], carry10[0]);
+    fulladder fa17(a10[1], s10[1], carry10[0], y10[1], carry10[1]);
+    fulladder fa18(a10[2], s10[2], carry10[1], y10[2], carry10[2]);
+    fulladder fa19(a10[3], s10[3], carry10[2], y10[3], carry10[3]);
+    fulladder fa20(a10[4], s10[4], carry10[3], y10[4], carry10[4]);
+    fulladder fa21(a10[5], s10[5], carry10[4], y10[5], carry10[5]);
+    fulladder fa22(a10[6], s10[6], carry10[5], y10[6], carry10[6]);
+    fulladder fa23(a10[7], s10[7], carry10[6], y10[7], carry10[7]);
+	 
+	 fulladder fa24(a11[0], s11[0], 1'b0, y11[0], carry11[0]);
+    fulladder fa25(a11[1], s11[1], carry11[0], y11[1], carry11[1]);
+    fulladder fa26(a11[2], s11[2], carry11[1], y11[2], carry11[2]);
+    fulladder fa27(a11[3], s11[3], carry11[2], y11[3], carry11[3]);
+    fulladder fa28(a11[4], s11[4], carry11[3], y11[4], carry11[4]);
+    fulladder fa29(a11[5], s11[5], carry11[4], y11[5], carry11[5]);
+    fulladder fa30(a11[6], s11[6], carry11[5], y11[6], carry11[6]);
+    fulladder fa31(a11[7], s11[7], carry11[6], y11[7], carry11[7]);
+	 
+	 and and1(y00[8],1'b1,y00[7]);
+	 and and2(y00[9],1'b1,y00[7]);
+	 and and3(y00[10],1'b1,y00[7]);
+	 and and4(y00[11],1'b1,y00[7]);
+	 and and5(y00[12],1'b1,y00[7]);
+	 and and6(y00[13],1'b1,y00[7]);
+	 and and7(y00[14],1'b1,y00[7]);
+	 and and8(y00[15],1'b1,y00[7]);
+	 
+	 and and9(y01[8],1'b1,y01[7]);
+	 and and10(y01[9],1'b1,y01[7]);
+	 and and11(y01[10],1'b1,y01[7]);
+	 and and12(y01[11],1'b1,y01[7]);
+	 and and13(y01[12],1'b1,y01[7]);
+	 and and14(y01[13],1'b1,y01[7]);
+	 and and15(y01[14],1'b1,y01[7]);
+	 and and16(y01[15],1'b1,y01[7]);
+	 
+	 and and17(y10[8],1'b1,y10[7]);
+	 and and18(y10[9],1'b1,y10[7]);
+	 and and19(y10[10],1'b1,y10[7]);
+	 and and20(y10[11],1'b1,y10[7]);
+	 and and21(y10[12],1'b1,y10[7]);
+	 and and22(y10[13],1'b1,y10[7]);
+	 and and23(y10[14],1'b1,y10[7]);
+	 and and24(y10[15],1'b1,y10[7]);
+	 
+	 and and25(y11[8],1'b1,y11[7]);
+	 and and26(y11[9],1'b1,y11[7]);
+	 and and27(y11[10],1'b1,y11[7]);
+	 and and28(y11[11],1'b1,y11[7]);
+	 and and29(y11[12],1'b1,y11[7]);
+	 and and30(y11[13],1'b1,y11[7]);
+	 and and31(y11[14],1'b1,y11[7]);
+	 and and32(y11[15],1'b1,y11[7]);
+
+endmodule
+
+module Mult2x2(
+    input [7:0]a00, a01, a10, a11,
+    input [7:0]b00, b01, b10, b11,
+    output [15:0]y00, y01, y10, y11
+);
+
+    wire [15:0] a00b00, a01b10, a00b01, a01b11, a10b00, a11b10, a10b01, a11b11;
+
+    BitMultiplier8 m1(a00, b00, a00b00); // a00 * b00
+    BitMultiplier8 m2(a01, b10, a01b10); // a01 * b10
+    BitMultiplier8 m3(a00, b01, a00b01); // a00 * b01
+    BitMultiplier8 m4(a01, b11, a01b11); // a01 * b11
+    BitMultiplier8 m5(a10, b00, a10b00); // a10 * b00
+    BitMultiplier8 m6(a11, b10, a11b10); // a11 * b10
+    BitMultiplier8 m7(a10, b01, a10b01); // a10 * b01
+    BitMultiplier8 m8(a11, b11, a11b11); // a11 * b11
+
+    RippleCarryAdder1 r1(a00b00, a01b10, y00); // a00b00 + a01b10
+    RippleCarryAdder1 r2(a00b01, a01b11, y01); // a00b01 + a01b11
+    RippleCarryAdder1 r3(a10b00, a11b10, y10); // a10b00 + a11b10
+    RippleCarryAdder1 r4(a10b01, a11b11, y11); // a10b01 + a11b11
+
+endmodule
+
+module RippleCarryAdder1(
+	input [15:0] a,b,
+	output [15:0] sum
+);
+	
+	 wire [15:0]carry;
+	 
+	fulladder fa0(a[0], b[0], 1'b0, sum[0], carry[0]);
+    fulladder fa1(a[1], b[1], carry[0], sum[1], carry[1]);
+    fulladder fa2(a[2], b[2], carry[1], sum[2], carry[2]);
+    fulladder fa3(a[3], b[3], carry[2], sum[3], carry[3]);
+    fulladder fa4(a[4], b[4], carry[3], sum[4], carry[4]);
+    fulladder fa5(a[5], b[5], carry[4], sum[5], carry[5]);
+    fulladder fa6(a[6], b[6], carry[5], sum[6], carry[6]);
+    fulladder fa7(a[7], b[7], carry[6], sum[7], carry[7]);
+	 fulladder fa8(a[8], b[8], carry[7], sum[8], carry[8]);
+    fulladder fa9(a[9], b[9], carry[8], sum[9], carry[9]);
+    fulladder fa10(a[10], b[10], carry[9], sum[10], carry[10]);
+    fulladder fa11(a[11], b[11], carry[10], sum[11], carry[11]);
+    fulladder fa12(a[12], b[12], carry[11], sum[12], carry[12]);
+    fulladder fa13(a[13], b[13], carry[12], sum[13], carry[13]);
+    fulladder fa14(a[14], b[14], carry[13], sum[14], carry[14]);
+    fulladder fa15(a[15], b[15], carry[14], sum[15], carry[15]);
+endmodule
+
+
+module BitMultiplier8(input [7:0]a,b,output[15:0]y);
+    wire[6:0] iq1;
+    wire[7:0] iq2,iq3,iq4,iq5,iq6,iq7,iq8;
+	wire[7:0] w1,w2,w3,w4,w5,w6,w7,w8,s1,s2,s3,s4,s5,s6,s7;
+	
+	and first1(y[0],b[0],a[0]);
+    and first2(iq1[0],b[0],a[1]);
+    and first3(iq1[1],b[0],a[2]);
+    and first4(iq1[2],b[0],a[3]);
+    and first5(iq1[3],b[0],a[4]);
+    and first6(iq1[4],b[0],a[5]);
+    and first7(iq1[5],b[0],a[6]);
+    nandgate first8(b[0],a[7],iq1[6]);
+
+    and second1(iq2[0],b[1],a[0]);
+    and second2(iq2[1],b[1],a[1]);
+    and second3(iq2[2],b[1],a[2]);
+    and second4(iq2[3],b[1],a[3]);
+    and second5(iq2[4],b[1],a[4]);
+    and second6(iq2[5],b[1],a[5]);
+    and second7(iq2[6],b[1],a[6]);
+    nandgate second8(b[1],a[7],iq2[7]);
+
+    and third1(iq3[0],b[2],a[0]);
+    and third2(iq3[1],b[2],a[1]);
+    and third3(iq3[2],b[2],a[2]);
+    and third4(iq3[3],b[2],a[3]);
+    and third5(iq3[4],b[2],a[4]);
+    and third6(iq3[5],b[2],a[5]);
+    and third7(iq3[6],b[2],a[6]);
+    nandgate third8(b[2],a[7],iq3[7]);
+
+    and fourth1(iq4[0],b[3],a[0]);
+    and fourth2(iq4[1],b[3],a[1]);
+    and fourth3(iq4[2],b[3],a[2]);
+    and fourth4(iq4[3],b[3],a[3]);
+    and fourth5(iq4[4],b[3],a[4]);
+    and fourth6(iq4[5],b[3],a[5]);
+    and fourth7(iq4[6],b[3],a[6]);
+    nandgate fourth8(b[3],a[7],iq4[7]);
+
+    and fifth1(iq5[0],b[4],a[0]);
+    and fifth2(iq5[1],b[4],a[1]);
+    and fifth3(iq5[2],b[4],a[2]);
+    and fifth4(iq5[3],b[4],a[3]);
+    and fifth5(iq5[4],b[4],a[4]);
+    and fifth6(iq5[5],b[4],a[5]);
+    and fifth7(iq5[6],b[4],a[6]);
+  	nandgate fifth8(b[4],a[7],iq5[7]);
+
+    and sixth1(iq6[0],b[5],a[0]);
+    and sixth2(iq6[1],b[5],a[1]);
+    and sixth3(iq6[2],b[5],a[2]);
+    and sixth4(iq6[3],b[5],a[3]);
+    and sixth5(iq6[4],b[5],a[4]);
+    and sixth6(iq6[5],b[5],a[5]);
+    and sixth7(iq6[6],b[5],a[6]);
+    nandgate sixth8(a[7],b[5],iq6[7]);
+
+    and seventh1(iq7[0],b[6],a[0]);
+    and seventh2(iq7[1],b[6],a[1]);
+    and seventh3(iq7[2],b[6],a[2]);
+    and seventh4(iq7[3],b[6],a[3]);
+    and seventh5(iq7[4],b[6],a[4]);
+    and seventh6(iq7[5],b[6],a[5]);
+    and seventh7(iq7[6],b[6],a[6]);
+    nandgate seventh8(b[6],a[7],iq7[7]);
+
+    nandgate e1(a[0],b[7],iq8[0]);
+    nandgate e2(a[1],b[7],iq8[1]);
+    nandgate e3(a[2],b[7],iq8[2]);
+    nandgate e4(a[3],b[7],iq8[3]);
+    nandgate e5(a[4],b[7],iq8[4]);
+    nandgate e6(a[5],b[7],iq8[5]);
+    nandgate e7(a[6],b[7],iq8[6]);
+    and e8(iq8[7],b[7],a[7]);
+
+	
+    fulladder vva1(iq1[0],iq2[0],1'b0,y[1],w1[0]);
+    fulladder vva2(iq1[1],iq2[1],w1[0],s1[0],w1[1]);
+    fulladder vva3(iq1[2],iq2[2],w1[1],s1[1],w1[2]);
+    fulladder vva4(iq1[3],iq2[3],w1[2],s1[2],w1[3]);
+    fulladder vva5(iq1[4],iq2[4],w1[3],s1[3],w1[4]);
+    fulladder vva6(iq1[5],iq2[5],w1[4],s1[4],w1[5]);
+    fulladder vva7(iq1[6],iq2[6],w1[5],s1[5],w1[6]);
+    fulladder vva8(1'b0,iq2[7],w1[6],s1[6],w1[7]);
+	
+    fulladder ss1(s1[0],iq3[0],1'b0,y[2],w2[0]);
+    fulladder ss2(s1[1],iq3[1],w2[0],s2[0],w2[1]);
+    fulladder ss3(s1[2],iq3[2],w2[1],s2[1],w2[2]);
+    fulladder ss4(s1[3],iq3[3],w2[2],s2[2],w2[3]);
+    fulladder ss5(s1[4],iq3[4],w2[3],s2[3],w2[4]);
+    fulladder ss6(s1[5],iq3[5],w2[4],s2[4],w2[5]);
+    fulladder ss7(s1[6],iq3[6],w2[5],s2[5],w2[6]);
+    fulladder ss8(w1[7],iq3[7],w2[6],s2[6],w2[7]);
+	
+    fulladder tt1(s2[0],iq4[0],1'b0,y[3],w3[0]);
+    fulladder tt2(s2[1],iq4[1],w3[0],s3[0],w3[1]);
+    fulladder tt3(s2[2],iq4[2],w3[1],s3[1],w3[2]);
+    fulladder tt4(s2[3],iq4[3],w3[2],s3[2],w3[3]);
+    fulladder tt5(s2[4],iq4[4],w3[3],s3[3],w3[4]);
+    fulladder tt6(s2[5],iq4[5],w3[4],s3[4],w3[5]);
+    fulladder tt7(s2[6],iq4[6],w3[5],s3[5],w3[6]);
+    fulladder tt8(w2[7],iq4[7],w3[6],s3[6],w3[7]);
+	
+    fulladder kk1(s3[0],iq5[0],1'b0,y[4],w4[0]);
+    fulladder kk2(s3[1],iq5[1],w4[0],s4[0],w4[1]);
+    fulladder kk3(s3[2],iq5[2],w4[1],s4[1],w4[2]);
+    fulladder kk4(s3[3],iq5[3],w4[2],s4[2],w4[3]);
+    fulladder kk5(s3[4],iq5[4],w4[3],s4[3],w4[4]);
+    fulladder kk6(s3[5],iq5[5],w4[4],s4[4],w4[5]);
+    fulladder kk7(s3[6],iq5[6],w4[5],s4[5],w4[6]);
+    fulladder kk8(w3[7],iq5[7],w4[6],s4[6],w4[7]);
+	
+    fulladder hh1(s4[0],iq6[0],1'b0,y[5],w5[0]);
+    fulladder hh2(s4[1],iq6[1],w5[0],s5[0],w5[1]);
+    fulladder hh3(s4[2],iq6[2],w5[1],s5[1],w5[2]);
+    fulladder hh4(s4[3],iq6[3],w5[2],s5[2],w5[3]);
+    fulladder hh5(s4[4],iq6[4],w5[3],s5[3],w5[4]);
+    fulladder hh6(s4[5],iq6[5],w5[4],s5[4],w5[5]);
+    fulladder hh7(s4[6],iq6[6],w5[5],s5[5],w5[6]);
+    fulladder hh8(w4[7],iq6[7],w5[6],s5[6],w5[7]);
+	
+    fulladder dd1(s5[0],iq7[0],1'b0,y[6],w6[0]);
+    fulladder dd2(s5[1],iq7[1],w6[0],s6[0],w6[1]);
+    fulladder dd3(s5[2],iq7[2],w6[1],s6[1],w6[2]);
+    fulladder dd4(s5[3],iq7[3],w6[2],s6[2],w6[3]);
+    fulladder dd5(s5[4],iq7[4],w6[3],s6[3],w6[4]);
+    fulladder dd6(s5[5],iq7[5],w6[4],s6[4],w6[5]);
+    fulladder dd7(s5[6],iq7[6],w6[5],s6[5],w6[6]);
+    fulladder dd8(w5[7],iq7[7],w6[6],s6[6],w6[7]);
+	
+    fulladder mm1(s6[0],iq8[0],1'b0,y[7],w7[0]);
+    fulladder mm2(s6[1],iq8[1],w7[0],s7[0],w7[1]);
+    fulladder mm3(s6[2],iq8[2],w7[1],s7[1],w7[2]);
+    fulladder mm4(s6[3],iq8[3],w7[2],s7[2],w7[3]);
+    fulladder mm5(s6[4],iq8[4],w7[3],s7[3],w7[4]);
+    fulladder mm6(s6[5],iq8[5],w7[4],s7[4],w7[5]);
+    fulladder mm7(s6[6],iq8[6],w7[5],s7[5],w7[6]);
+    fulladder mm8(w6[7],iq8[7],w7[6],s7[6],w7[7]);
+	
+	fulladder ee1(s7[0],1'b1,1'b0,y[8],w8[0]);
+	fulladder ee2(s7[1],1'b0,w8[0],y[9],w8[1]);
+	fulladder ee3(s7[2],1'b0,w8[1],y[10],w8[2]);
+	fulladder ee4(s7[3],1'b0,w8[2],y[11],w8[3]);
+	fulladder ee5(s7[4],1'b0,w8[3],y[12],w8[4]);
+	fulladder ee6(s7[5],1'b0,w8[4],y[13],w8[5]);
+	fulladder ee7(s7[6],1'b0,w8[5],y[14],w8[6]);
+	fulladder ee8(1'b0,1'b1,w8[6],y[15],w8[7]);
+endmodule
+
+
+module fulladder(
+    input a, b, cin,
+    output sum, cout
+);
+
+    wire x1, x2, x3;
+
+    xor(x1, a, b);
+    and(x3, a, b);
+    xor(sum, x1, cin);
+    and(x2, x1, cin);
+    or(cout, x2, x3);
+
+endmodule
+
+module not_gate(
+		input [7:0]a,
+		output [7:0]b
+);
+		not not1(b[0],a[0]);
+		not not2(b[1],a[1]);
+		not not3(b[2],a[2]);
+		not not4(b[3],a[3]);
+		not not5(b[4],a[4]);
+		not not6(b[5],a[5]);
+		not not7(b[6],a[6]);
+		not not8(b[7],a[7]);			
+endmodule
+
+module halfadder(
+    input a, b,
+    output sum, out
+);
+
+    xor(sum, a, b);
+    and(out, a, b);
+
+endmodule
+
+module RippleCarryAdder(
+    input [7:0] a,
+    input [7:0] b,
+    output [15:0] sum
+);
+
+    wire [15:0] carry;
+
+    fulladder fa0(a[0], b[0], 1'b0, sum[0], carry[0]);
+    fulladder fa1(a[1], b[1], carry[0], sum[1], carry[1]);
+    fulladder fa2(a[2], b[2], carry[1], sum[2], carry[2]);
+    fulladder fa3(a[3], b[3], carry[2], sum[3], carry[3]);
+    fulladder fa4(a[4], b[4], carry[3], sum[4], carry[4]);
+    fulladder fa5(a[5], b[5], carry[4], sum[5], carry[5]);
+    fulladder fa6(a[6], b[6], carry[5], sum[6], carry[6]);
+    fulladder fa7(a[7], b[7], carry[6], sum[7], carry[7]);
+
+    fulladder fa00(1'b0, 1'b0, carry[7], sum[8], carry[8]);
+    fulladder fa01(1'b0, 1'b0, 1'b0, sum[9], carry[9]);
+    fulladder fa02(1'b0, 1'b0, 1'b0, sum[10], carry[10]);
+    fulladder fa03(1'b0, 1'b0, 1'b0, sum[11], carry[11]);
+    fulladder fa04(1'b0, 1'b0, 1'b0, sum[12], carry[12]);
+    fulladder fa05(1'b0, 1'b0, 1'b0, sum[13], carry[13]);
+    fulladder fa06(1'b0, 1'b0, 1'b0, sum[14], carry[14]);
+    fulladder fa07(1'b0, 1'b0, 1'b0, sum[15], carry[15]);
+
+endmodule
+
+module transpose(
+	 input [7:0]a00,a01,a10,a11,
+	 output [15:0]y00, y01,y10,y11
+);
+	 and and1(y00[0],a00[0],1'b1);
+     and and2(y00[1],a00[1],1'b1);
+	 and and3(y00[2],a00[2],1'b1);
+	 and and4(y00[3],a00[3],1'b1);
+	 and and5(y00[4],a00[4],1'b1);
+	 and and6(y00[5],a00[5],1'b1);
+	 and and7(y00[6],a00[6],1'b1);
+	 and and8(y00[7],a00[7],1'b1);
+	 
+	 and and9(y00[8],1'b0,1'b1);
+	 and and10(y00[9],1'b0,1'b1);
+	 and and11(y00[10],1'b0,1'b1);
+	 and and12(y00[11],1'b0,1'b1);
+	 and and13(y00[12],1'b0,1'b1);
+	 and and14(y00[13],1'b0,1'b1);
+	 and and15(y00[14],1'b0,1'b1);
+	 and and16(y00[15],1'b0,1'b1);
+	 
+	 and and17(y01[0],a10[0],1'b1);
+     and and18(y01[1],a10[1],1'b1);
+	 and and19(y01[2],a10[2],1'b1);
+	 and and20(y01[3],a10[3],1'b1);
+	 and and21(y01[4],a10[4],1'b1);
+	 and and22(y01[5],a10[5],1'b1);
+	 and and23(y01[6],a10[6],1'b1);
+	 and and24(y01[7],a10[7],1'b1);
+	 
+	 and and25(y01[8],1'b0,1'b1);
+	 and and26(y01[9],1'b0,1'b1);
+	 and and27(y01[10],1'b0,1'b1);
+	 and and28(y01[11],1'b0,1'b1);
+	 and and29(y01[12],1'b0,1'b1);
+	 and and30(y01[13],1'b0,1'b1);
+	 and and31(y01[14],1'b0,1'b1);
+	 and and32(y01[15],1'b0,1'b1);
+	 
+	 and and33(y10[0],a01[0],1'b1);
+     and and34(y10[1],a01[1],1'b1);
+	 and and35(y10[2],a01[2],1'b1);
+	 and and36(y10[3],a01[3],1'b1);
+	 and and37(y10[4],a01[4],1'b1);
+	 and and38(y10[5],a01[5],1'b1);
+	 and and39(y10[6],a01[6],1'b1);
+	 and and40(y10[7],a01[7],1'b1);
+	 
+	 and and41(y10[8],1'b0,1'b1);
+	 and and42(y10[9],1'b0,1'b1);
+	 and and43(y10[10],1'b0,1'b1);
+	 and and44(y10[11],1'b0,1'b1);
+	 and and45(y10[12],1'b0,1'b1);
+	 and and46(y10[13],1'b0,1'b1);
+	 and and47(y10[14],1'b0,1'b1);
+	 and and48(y10[15],1'b0,1'b1);
+	 
+	 and and49(y11[0],a11[0],1'b1);
+     and and50(y11[1],a11[1],1'b1);
+	 and and51(y11[2],a11[2],1'b1);
+	 and and52(y11[3],a11[3],1'b1);
+	 and and53(y11[4],a11[4],1'b1);
+	 and and54(y11[5],a11[5],1'b1);
+	 and and55(y11[6],a11[6],1'b1);
+	 and and56(y11[7],a11[7],1'b1);
+	 
+	 and and57(y11[8],1'b0,1'b1);
+	 and and58(y11[9],1'b0,1'b1);
+	 and and59(y11[10],1'b0,1'b1);
+	 and and60(y11[11],1'b0,1'b1);
+	 and and61(y11[12],1'b0,1'b1);
+	 and and62(y11[13],1'b0,1'b1);
+	 and and63(y11[14],1'b0,1'b1);
+	 and and64(y11[15],1'b0,1'b1);
+	 
+	 
+endmodule
+
+module adjoint(
+	input [7:0]a00,a01,a10,a11,
+	output [15:0]y00,y01,y10,y11
+);
+	 wire [7:0]m01,m10,c01,s01,s10,c10;
+
+	 and and1(y00[0],a11[0],1'b1);
+     and and2(y00[1],a11[1],1'b1);
+	 and and3(y00[2],a11[2],1'b1);
+	 and and4(y00[3],a11[3],1'b1);
+	 and and5(y00[4],a11[4],1'b1);
+	 and and6(y00[5],a11[5],1'b1);
+	 and and7(y00[6],a11[6],1'b1);
+	 and and8(y00[7],a11[7],1'b1);
+	 
+	 and and9(y00[8],1'b0,1'b1);
+	 and and10(y00[9],1'b0,1'b1);
+	 and and11(y00[10],1'b0,1'b1);
+	 and and12(y00[11],1'b0,1'b1);
+	 and and13(y00[12],1'b0,1'b1);
+	 and and14(y00[13],1'b0,1'b1);
+	 and and15(y00[14],1'b0,1'b1);
+	 and and16(y00[15],1'b0,1'b1);
+	 
+	 not_gate not32(a10,m10);
+	 halfadder h0(m10[0],1'b1,s01[0],c01[0]);
+	 halfadder h1(m10[1],c01[0],s01[1],c01[1]);
+	 halfadder h2(m10[2],c01[1],s01[2],c01[2]);
+	 halfadder h3(m10[3],c01[2],s01[3],c01[3]);
+	 halfadder h4(m10[4],c01[3],s01[4],c01[4]);
+	 halfadder h5(m10[5],c01[4],s01[5],c01[5]);
+	 halfadder h6(m10[6],c01[5],s01[6],c01[6]);
+	 halfadder h7(m10[7],c01[6],s01[7],c01[7]);
+	 
+	 and and17(y01[0],s01[0],1'b1);
+	 and and18(y01[1],s01[1],1'b1);
+	 and and19(y01[2],s01[2],1'b1);
+	 and and20(y01[3],s01[3],1'b1);
+	 and and21(y01[4],s01[4],1'b1);
+	 and and22(y01[5],s01[5],1'b1);
+	 and and23(y01[6],s01[6],1'b1);
+	 and and24(y01[7],s01[7],1'b1);
+	 
+	 and and25(y01[8],1'b1,s01[7]);
+	 and and26(y01[9],1'b1,s01[7]);
+	 and and27(y01[10],1'b1,s01[7]);
+	 and and28(y01[11],1'b1,s01[7]);
+	 and and29(y01[12],1'b1,s01[7]);
+	 and and30(y01[13],1'b1,s01[7]);
+	 and and31(y01[14],1'b1,s01[7]);
+	 and and32(y01[15],1'b1,s01[7]);
+	 
+	 not_gate not1(a01,m01);
+	 halfadder h8(m01[0],1'b1,s10[0],c10[0]);
+	 halfadder h9(m01[1],c10[0],s10[1],c10[1]);
+	 halfadder h10(m01[2],c10[1],s10[2],c10[2]);
+	 halfadder h11(m01[3],c10[2],s10[3],c10[3]);
+	 halfadder h12(m01[4],c10[3],s10[4],c10[4]);
+	 halfadder h13(m01[5],c10[4],s10[5],c10[5]);
+	 halfadder h14(m01[6],c10[5],s10[6],c10[6]);
+	 halfadder h15(m01[7],c10[6],s10[7],c10[7]);
+	 
+	 and and33(y10[0],s10[0],1'b1);
+     and and34(y10[1],s10[1],1'b1);
+	 and and35(y10[2],s10[2],1'b1);
+	 and and36(y10[3],s10[3],1'b1);
+	 and and37(y10[4],s10[4],1'b1);
+	 and and38(y10[5],s10[5],1'b1);
+	 and and39(y10[6],s10[6],1'b1);
+	 and and40(y10[7],s10[7],1'b1);
+	 
+	 and and41(y10[8],1'b1,s10[7]);
+	 and and42(y10[9],1'b1,s10[7]);
+	 and and43(y10[10],1'b1,s10[7]);
+	 and and44(y10[11],1'b1,s10[7]);
+	 and and45(y10[12],1'b1,s10[7]);
+	 and and46(y10[13],1'b1,s10[7]);
+	 and and47(y10[14],1'b1,s10[7]);
+	 and and48(y10[15],1'b1,s10[7]);
+	 
+     and and49(y11[0],a00[0],1'b1);
+     and and50(y11[1],a00[1],1'b1);
+     and and51(y11[2],a00[2],1'b1);
+     and and52(y11[3],a00[3],1'b1);
+     and and53(y11[4],a00[4],1'b1);
+     and and54(y11[5],a00[5],1'b1);
+     and and55(y11[6],a00[6],1'b1);
+     and and56(y11[7],a00[7],1'b1);
+	 
+	 and and57(y11[8],1'b0,1'b1);
+	 and and58(y11[9],1'b0,1'b1);
+	 and and59(y11[10],1'b0,1'b1);
+	 and and60(y11[11],1'b0,1'b1);
+	 and and61(y11[12],1'b0,1'b1);
+	 and and62(y11[13],1'b0,1'b1);
+	 and and63(y11[14],1'b0,1'b1);
+	 and and64(y11[15],1'b0,1'b1);
+	 
+endmodule
+	 
+module mult8(
+    input [7:0]a00, a01, a10, a11, b00, b01, b10, b11,
+    input [6:0]op,
+    output [15:0]y00, y01, y10, y11
+);
+
+    wire [15:0] ansadd00, ansadd01, ansadd10, ansadd11;
+    wire [15:0] anssub00, anssub01, anssub10, anssub11;
+    wire [15:0] ansmult00, ansmult01, ansmult10, ansmult11;
+	 wire [15:0] ans1trans00,ans1trans01,ans1trans10,ans1trans11;
+	 wire [15:0] ans2trans00,ans2trans01,ans2trans10,ans2trans11;
+	 wire [15:0] ans1adj00,ans1adj01,ans1adj10,ans1adj11;
+	 wire [15:0] ans2adj00,ans2adj01,ans2adj10,ans2adj11;
+
+    Add2x2 add(a00, a01, a10, a11, b00, b01, b10, b11, ansadd00, ansadd01, ansadd10, ansadd11);
+    Sub2x2 sub(a00, a01, a10, a11, b00, b01, b10, b11, anssub00, anssub01, anssub10, anssub11);
+    Mult2x2 mult(a00, a01, a10, a11, b00, b01, b10, b11, ansmult00, ansmult01, ansmult10, ansmult11);
+	 transpose t1(a00, a01, a10, a11,ans1trans00,ans1trans01,ans1trans10,ans1trans11);
+	 transpose t2(b00, b01, b10, b11,ans2trans00,ans2trans01,ans2trans10,ans2trans11);
+	 adjoint a1(a00, a01, a10, a11,ans1adj00,ans1adj01,ans1adj10,ans1adj11);
+	 adjoint a2(b00, b01, b10, b11,ans2adj00,ans2adj01,ans2adj10,ans2adj11);
+
+    wire [15:0] aluadd00, aluadd01, aluadd10, aluadd11;
+    wire [15:0] alusub00, alusub01, alusub10, alusub11;
+    wire [15:0] alumult00, alumult01, alumult10, alumult11;
+	 wire [15:0] alu1trans00,alu1trans01,alu1trans10,alu1trans11;
+	 wire [15:0] alu2trans00,alu2trans01,alu2trans10,alu2trans11;
+	 wire [15:0] alu1adj00,alu1adj01,alu1adj10,alu1adj11;
+	 wire [15:0] alu2adj00,alu2adj01,alu2adj10,alu2adj11;
+
+    and16x1 and1(ansadd00, op[0], aluadd00);
+    and16x1 and2(ansadd01, op[0], aluadd01);
+    and16x1 and3(ansadd10, op[0], aluadd10);
+    and16x1 and4(ansadd11, op[0], aluadd11);
+
+    and16x1 and5(anssub00, op[1], alusub00);
+    and16x1 and6(anssub01, op[1], alusub01);
+    and16x1 and7(anssub10, op[1], alusub10);
+    and16x1 and8(anssub11, op[1], alusub11);
+
+    and16x1  and9(ansmult00, op[2], alumult00);
+    and16x1 and10(ansmult01, op[2], alumult01);
+    and16x1 and11(ansmult10, op[2], alumult10);
+    and16x1 and12(ansmult11, op[2], alumult11);
+	 
+	 and16x1 and13(ans1trans00, op[3], alu1trans00);
+    and16x1 and14(ans1trans01, op[3], alu1trans01);
+    and16x1 and15(ans1trans10, op[3], alu1trans10);
+    and16x1 and16(ans1trans11, op[3], alu1trans11);
+	 
+	 and16x1 and17(ans2trans00, op[4], alu2trans00);
+    and16x1 and18(ans2trans01, op[4], alu2trans01);
+    and16x1 and19(ans2trans10, op[4], alu2trans10);
+    and16x1 and20(ans2trans11, op[4], alu2trans11);
+	 
+	 and16x1 and21(ans1adj00, op[5], alu1adj00);
+    and16x1 and22(ans1adj01, op[5], alu1adj01);
+    and16x1 and23(ans1adj10, op[5], alu1adj10);
+    and16x1 and24(ans1adj11, op[5], alu1adj11);
+	 
+	 and16x1 and25(ans2adj00, op[6], alu2adj00);
+    and16x1 and26(ans2adj01, op[6], alu2adj01);
+    and16x1 and27(ans2adj10, op[6], alu2adj10);
+    and16x1 and28(ans2adj11, op[6], alu2adj11);
+
+    or16x16x16 or1(aluadd00, alusub00, alumult00,alu1trans00,alu2trans00,alu1adj00,alu2adj00, y00);
+    or16x16x16 or2(aluadd01, alusub01, alumult01,alu1trans01,alu2trans01,alu1adj01,alu2adj01, y01);
+    or16x16x16 or3(aluadd10, alusub10, alumult10,alu1trans10,alu2trans10,alu1adj10,alu2adj10, y10);
+    or16x16x16 or4(aluadd11, alusub11, alumult11,alu1trans11,alu2trans11,alu1adj11,alu2adj11, y11);
+	 
+
+endmodule 
+
+module nandgate(a,b,y);
+		input a,b;
+		output y;
+		nand(y,a,b);
+endmodule
